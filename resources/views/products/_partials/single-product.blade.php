@@ -9,13 +9,13 @@
                     <!-- wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img src="images/product-slide1.jpg" alt="">
+                            <img src="{{ asset('minimal_shop//product-slide1.jpg') }}" alt="">
                         </div>
                         <div class="item">
-                            <img src="images/product-slide2.jpg" alt="">
+                            <img src="{{ asset('minimal_shop//product-slide2.jpg') }}" alt="">
                         </div>
                         <div class="item">
-                            <img src="images/product-slide3.jpg" alt="">
+                            <img src="{{ asset('minimal_shop//product-slide3.jpg') }}" alt="">
                         </div>
                     </div>
                     <!-- / wrapper for slides -->
@@ -95,7 +95,7 @@
                     <div role="tabpanel" class="tab-pane animated fadeIn" id="reviews">
                         <div class="reviews">
                             <div class="review-author pull-left">
-                                <img src="images/author1.jpg" alt="">
+                                <img src="{{ asset('minimal_shop//author1.jpg') }}" alt="">
                             </div>
                             <div class="review-content">
                                 <h4 class="review-title no-margin">Amazing product!</h4>
@@ -114,7 +114,7 @@
                             <div class="space-25">&nbsp;</div>
 
                             <div class="review-author pull-left">
-                                <img src="images/author2.jpg" alt="">
+                                <img src="{{ asset('minimal_shop//author2.jpg') }}" alt="">
                             </div>
                             <div class="review-content">
                                 <h4 class="review-title no-margin">Very good product!</h4>
@@ -219,8 +219,9 @@
 
                     <div class="space-25">&nbsp;</div>
 
-                    <a href="shopping-cart.html" class="btn btn-primary-filled btn-rounded"><i class="lnr lnr-cart"></i><span> Add to Cart</span></a>
-                    <a href="checkout.html" class="btn btn-success-filled btn-rounded"><i
+                    <a href="{{ route('shopping-cart') }}" class="btn btn-primary-filled btn-rounded"><i
+                            class="lnr lnr-cart"></i><span> Add to Cart</span></a>
+                    <a href="{{ route('checkout') }}" class="btn btn-success-filled btn-rounded"><i
                             class="lnr lnr-heart"></i><span> Buy Now</span></a>
                 </div>
 
@@ -238,17 +239,18 @@
             <li class="col-xs-6 col-md-4 product m-product" data-groups='["mens"]'>
                 <div class="img-bg-color primary">
                     <h5 class="product-price">$49</h5>
-                    <a href="single-product.html" class="product-link"></a>
+                    <a href="{{ route('product') }}" class="product-link"></a>
                     <!-- / product-link -->
-                    <img src="images/m-product.jpg" alt="">
+                    <img src="{{ asset('minimal_shop//m-product.jpg') }}" alt="">
                     <!-- / product-image -->
 
                     <!-- product-hover-tools -->
                     <div class="product-hover-tools">
-                        <a href="single-product.html" class="view-btn" data-toggle="tooltip" title="View Product">
+                        <a href="{{ route('product') }}" class="view-btn" data-toggle="tooltip" title="View Product">
                             <i class="lnr lnr-eye"></i>
                         </a>
-                        <a href="shopping-cart.html" class="cart-btn" data-toggle="tooltip" title="Add to Cart">
+                        <a href="{{ route('shopping-cart') }}" class="cart-btn" data-toggle="tooltip"
+                           title="Add to Cart">
                             <i class="lnr lnr-cart"></i>
                         </a>
                     </div><!-- / product-hover-tools -->
@@ -269,17 +271,18 @@
                         <del>$159</del>
                         $79
                     </h5>
-                    <a href="single-product.html" class="product-link"></a>
+                    <a href="{{ route('product') }}" class="product-link"></a>
                     <!-- / product-link -->
-                    <img src="images/m-product.jpg" alt="">
+                    <img src="{{ asset('minimal_shop//m-product.jpg') }}" alt="">
                     <!-- / product-image -->
 
                     <!-- product-hover-tools -->
                     <div class="product-hover-tools">
-                        <a href="single-product.html" class="view-btn" data-toggle="tooltip" title="View Product">
+                        <a href="{{ route('product') }}" class="view-btn" data-toggle="tooltip" title="View Product">
                             <i class="lnr lnr-eye"></i>
                         </a>
-                        <a href="shopping-cart.html" class="cart-btn" data-toggle="tooltip" title="Add to Cart">
+                        <a href="{{ route('shopping-cart') }}" class="cart-btn" data-toggle="tooltip"
+                           title="Add to Cart">
                             <i class="lnr lnr-cart"></i>
                         </a>
                     </div><!-- / product-hover-tools -->
@@ -297,17 +300,18 @@
             <li class="col-xs-6 col-md-4 product m-product" data-groups='["mens"]'>
                 <div class="img-bg-color primary">
                     <h5 class="product-price">$39</h5>
-                    <a href="single-product.html" class="product-link"></a>
+                    <a href="{{ route('product') }}" class="product-link"></a>
                     <!-- / product-link -->
-                    <img src="images/m-product.jpg" alt="">
+                    <img src="{{ asset('minimal_shop//m-product.jpg') }}" alt="">
                     <!-- / product-image -->
 
                     <!-- product-hover-tools -->
                     <div class="product-hover-tools">
-                        <a href="single-product.html" class="view-btn" data-toggle="tooltip" title="View Product">
+                        <a href="{{ route('product') }}" class="view-btn" data-toggle="tooltip" title="View Product">
                             <i class="lnr lnr-eye"></i>
                         </a>
-                        <a href="shopping-cart.html" class="cart-btn" data-toggle="tooltip" title="Add to Cart">
+                        <a href="{{ route('shopping-cart') }}" class="cart-btn" data-toggle="tooltip"
+                           title="Add to Cart">
                             <i class="lnr lnr-cart"></i>
                         </a>
                     </div><!-- / product-hover-tools -->
